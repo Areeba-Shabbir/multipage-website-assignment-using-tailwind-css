@@ -2,26 +2,372 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header {
+  background-color:rgb(237, 178, 201);
+  padding: 10px 20px;
+  border: 2px #0b0b0a solid ;
+  -webkit-box-shadow: 8px 1px 27px 4px rgb(18, 26, 119);
+-moz-box-shadow: 8px 1px 27px 4px rgba(66, 68, 90, 1);
+box-shadow: 8px 1px 27px 4px rgba(66, 68, 90, 1);;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.header-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap:100px;
+ 
+}
+
+.header-buttons li {
+  margin-right: 20px;
+}
+
+.header-buttons li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons li a:hover {
+  background-color: #c678ac;
+  border-radius: 5px;
+}
+.header-buttons li a:active {
+  background-color: #222;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 480;
+  color: #9f1972 ;
+   font-family: 'Times New Roman';
+   text-shadow: 4px 14px 10px rgb(119, 118, 118);
+}
+
+.footer {
+
+  margin-top: 200px;
+  background-color:rgb(237, 178, 201);
+  padding: 10px 20px;
+  border: 2px #0b0b0a solid ;
+  -webkit-box-shadow: 8px 1px 27px 4px rgb(18, 26, 119);
+-moz-box-shadow: 8px 1px 27px 4px rgba(66, 68, 90, 1);
+box-shadow: 8px 1px 27px 4px rgba(66, 68, 90, 1);;
+}
+
+.footer-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  display: flex;
+  justify-content: right;
+  gap:100px;
+ 
+}
+
+.footer-buttons li {
+  margin-right: 20px;
+}
+
+.footer-buttons li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.footer-buttons li a:hover {
+  background-color: #95517e;
+  border-radius: 5px;
+}
+.footer-buttons li a:active {
+  background-color: #222;
+}
+
+.parent-container {
+  position: relative; /* Set to relative to contain absolutely positioned children */
+  height: 300px;
+  border: 2px rgb(207, 136, 180) solid;
+  width: 350px;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  -webkit-box-shadow: -7px 4px 17px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -7px 4px 17px -11px rgba(0,0,0,0.75);
+  box-shadow: -7px 4px 17px -11px rgba(0,0,0,0.75);
+}
+
+.parent-container:hover {
+  border: 2px solid #edb9dc;
+  transition-duration: 0.5 ease;
+  -webkit-box-shadow: -7px 4px 45px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -7px 4px 45px -11px rgba(0,0,0,0.75);
+  box-shadow: -7px 4px 45px -11px rgba(0,0,0,0.75);
+}
+.child-container{
+
+  /* background-color:rgb(237, 178, 201);  */
+   padding-bottom: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px; 
+}
+.picture{
+  background-color:  #f6d2ea;
+  height: fit-content;
+  width: fit-content;
+
+}
+h5{
+  font-size: 23px;
+  font-weight: 480;
+  color: #9f1972 ;
+   font-family: 'Times New Roman';
+}
+.explore-more-button {
+  background-color: #9f1972; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Smaller padding for a smaller button */
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+  position: absolute; /* Positioning */
+  bottom: 10px; /* Distance from the bottom */
+  right: 35px; /* Distance from the right */
+}
+
+
+.explore-more-button:hover {
+  background-color: #c678ac; /* Background color on hover */
+}
+.content {
+  display: flex; /* Use flexbox layout */
+  justify-content: flex-end; /* Align items to the right */
+  margin-top:10px; /* Add some space between content and button */
+}
+
+
+
+
+
+
+
+
+
+
+/* General styles for larger screens (desktops, laptops) */
+.parent-container {
+  width: 350px;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+  .parent-container {
+    width: 250px; /* Smaller width for tablets */
+    margin: 20px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 35px; /* Smaller heading font for smaller screens */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Responsive styles for mobile phones */
+@media (max-width: 480px) {
+  .parent-container {
+    width: 100%; /* Full width on mobile */
+    margin: 10px;
+    padding: 15px;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .explore-more-button {
+    right: 10px; /* Adjust button position for mobile */
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    gap: 10px;
   }
 }
+.header-buttons, .footer-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: center; /* Center the buttons on smaller screens */
+}
+
+/* For mobile, we want buttons to be stacked */
+@media (max-width: 480px) {
+  .header-buttons li, .footer-buttons li {
+    margin-right: 0; /* Remove extra margin */
+    width: 100%; /* Full width for buttons */
+    text-align: center; /* Center text */
+  }
+}
+img {
+  max-width: 100%; /* Make images scale to the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 480px) {
+  .child-container {
+    text-align: center; /* Center images on mobile */
+  }
+}
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  h5 {
+    font-size: 16px; /* Smaller font on mobile */
+  }
+
+  .parent-container {
+    padding: 10px; /* Less padding for mobile */
+  }
+}
+/* Header general styles for larger screens */
+.header {
+  background-color: rgb(237, 178, 201);
+  padding: 10px 20px;
+  border: 2px #0b0b0a solid;
+  box-shadow: 8px 1px 27px 4px rgba(66, 68, 90, 1);
+}
+
+.header-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px; /* Adjust gap between buttons */
+}
+
+.header-buttons li {
+  margin-right: 20px;
+}
+
+.header-buttons li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons li a:hover {
+  background-color: #c678ac;
+  border-radius: 5px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    text-align: center; /* Center the header on smaller screens */
+    padding: 15px 10px;
+  }
+
+  .header-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Adjust gap between buttons for smaller screens */
+  }
+
+  .header-buttons li a {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    padding: 8px 12px;
+  }
+}
+/* Footer general styles for larger screens */
+.footer {
+  background-color: rgb(237, 178, 201);
+  padding: 10px 20px;
+  border: 2px #0b0b0a solid;
+  box-shadow: 8px 1px 27px 4px rgba(66, 68, 90, 1);
+}
+
+.footer-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.footer-buttons li {
+  margin-right: 20px;
+}
+
+.footer-buttons li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-buttons li a:hover {
+  background-color: #95517e;
+  border-radius: 5px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center; /* Center the footer content */
+    padding: 15px 10px;
+  }
+
+  .footer-buttons {
+    flex-direction: column; /* Stack footer buttons vertically */
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+
+  .footer-buttons li a {
+    font-size: 16px; /* Adjust font size */
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .header-buttons, .footer-buttons {
+    flex-direction: column; /* Stack buttons */
+    gap: 10px; /* Smaller gap between buttons */
+  }
+
+  .header-buttons li a, .footer-buttons li a {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 6px 10px; /* Adjust padding */
+  }
+
+  .header, .footer {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+
