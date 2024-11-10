@@ -1,20 +1,23 @@
-export default function Contact(){
-    return(
-        <div>
-          
-         <br /><br />   <h1> Book Reviews  </h1>
-           
-    <h5>Your Opinion Matters!</h5>
-We believe every book has a story to tell, and so do you! Here are some reviews from our amazing readers. Share your thoughts with us! <br />
+export default function Contact() {
+    return (
+        <div className="p-8">
+            <h1 className="text-3xl font-semibold text-center text-pink-500 mb-4">Book Reviews</h1>
+            <h5 className="text-lg font-normal text-center text-gray-800 mb-6">Your Opinion Matters!</h5>
+            <p className="text-base text-gray-700 mb-6">
+                We believe every book has a story to tell, and so do you! Here are some reviews from our amazing readers. Share your thoughts with us!
+            </p>
 
-         "A beautifully crafted narrative that captivated me from the first page." <br />
-– Alishba <br />
+            <div className="text-base text-gray-800 mb-6">
+                <p>"A beautifully crafted narrative that captivated me from the first page."</p>
+                <p className="text-sm text-gray-600">– Alishba</p>
+            </div>
 
-"This book was a breath of fresh air in the genre." <br />
-– Adul Basit <br />      
+            <div className="text-base text-gray-800 mb-6">
+                <p>"This book was a breath of fresh air in the genre."</p>
+                <p className="text-sm text-gray-600">– Adul Basit</p>
+            </div>
 
-Share your review here! <br /><br /><br /><br /><br /><br /><br /><br />
+            <p className="text-base text-gray-700 mt-6">Share your review here!</p>
         </div>
-        
-    )
+    );
 }

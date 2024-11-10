@@ -1,13 +1,15 @@
-
 export default function Novels() {
-   return (
-     <div>
-       <h1>Novels</h1>
-       <h5>Jannat K Patty</h5>
-       <h5>Peer-e-Kamil</h5>
-       <h5>Aab-e-Hayat</h5>
-       <h5>Namal</h5>
-       <h5>Amar bail</h5>
-     </div>
-   );
- }
+  return (
+    <div className="p-6">
+      <h1 className="text-3xl font-semibold text-center mb-6">Novels</h1>
+
+      <div className="space-y-4">
+        <h5 className="text-lg font-medium">Jannat K Patty</h5>
+        <h5 className="text-lg font-medium">Peer-e-Kamil</h5>
+        <h5 className="text-lg font-medium">Aab-e-Hayat</h5>
+        <h5 className="text-lg font-medium">Namal</h5>
+        <h5 className="text-lg font-medium">Amar Bail</h5>
+      </div>
+    </div>
+  );
+}
