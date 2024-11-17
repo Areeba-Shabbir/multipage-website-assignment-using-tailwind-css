@@ -8,13 +8,13 @@ export default function Contact() {
             </p>
 
             <div className="text-base text-gray-800 mb-6">
-                <p>"A beautifully crafted narrative that captivated me from the first page."</p>
-                <p className="text-sm text-gray-600">– Alishba</p>
+                <p>A beautifully crafted narrative that captivated me from the first page.</p>
+                <p className="text-sm text-gray-600"> Alishba</p>
             </div>
 
             <div className="text-base text-gray-800 mb-6">
-                <p>"This book was a breath of fresh air in the genre."</p>
-                <p className="text-sm text-gray-600">– Adul Basit</p>
+                <p>This book was a breath of fresh air in the genre.</p>
+                <p className="text-sm text-gray-600"> Adul Basit</p>
             </div>
 
             <p className="text-base text-gray-700 mt-6">Share your review here!</p>

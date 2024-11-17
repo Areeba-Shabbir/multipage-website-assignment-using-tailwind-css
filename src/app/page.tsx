@@ -5,7 +5,7 @@ import Children from "@/app/public/Children.jpg";
 import Stories from "@/app/public/Stories.jpg";
 import Skills from "@/app/public/Skills.jpg";
 import Recipes from "@/app/public/Recipe.jpg";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link"; 
 
 export default function Home() {
   return (

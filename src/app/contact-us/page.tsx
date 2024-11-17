@@ -37,8 +37,8 @@ export default function Contact() {
   
         {/* Description */}
         <p className="text-lg text-gray-700 mb-4">
-          We'd love to hear from you! Whether you have a question, feedback, or just want to chat about your latest read,
-          don’t hesitate to reach out. Here’s how you can connect with us:
+          We love to hear from you! Whether you have a question, feedback, or just want to chat about your latest read,
+          dont hesitate to reach out. Here is how you can connect with us:
         </p>
   
         {/* Contact Info */}
